@@ -34,25 +34,32 @@
   <body>
     <div class="main">
       <div class="left_side">
+        <small>not requried</small>
         <div class="bill_main">
           <label for="bill" class="bill_amt">Bill</label>
-          <input type="text" id="bill_input" placeholder="" />
+          <input type="number" id="bill_input" placeholder="" />
           <div class="selection">
             <label for="tip_select" class="select_tip">Select Tip % </label>
             <div class="first_row">
-              <button class="btn_tip" id="five">5%</button>
-              <button class="btn_tip" id="ten">10%</button>
-              <button class="btn_tip" id="fiften">15%</button>
+              <button class="btn_tip" onclick="five()">5%</button>
+              <button class="btn_tip" onclick="ten()">10%</button>
+              <button class="btn_tip" onclick="fifteen()">15%</button>
             </div>
             <div class="second-row">
-              <button class="btn_tip" id="twentyfive">25%</button>
-              <button class="btn_tip" id="fifty">50%</button>
-              <button class="btn_tip" id="costom">Custom</button>
+              <button class="btn_tip" onclick="twentyfife()">25%</button>
+              <button class="btn_tip" onclick="fifty()">50%</button>
+              <input
+                type="number"
+                id="custom"
+                class="btn_tip2"
+                placeholder="Custom"
+              />
             </div>
           </div>
           <div class="num_of_ppl">
             <label for="number of people" class="ppl">Number of People</label>
-            <input type="text" id="num_of_ppl_input" />
+            <input type="number" id="num_of_ppl_input" />
+            <small>not requried</small>
           </div>
         </div>
       </div>
@@ -62,16 +69,16 @@
             <h4>Tip Amount</h4>
             <small>/ person</small>
           </div>
-          <p>$<samp>4.27</samp></p>
+          <p>$<samp id="tip_amt">4.27</samp></p>
         </div>
         <div class="total_amt">
           <div>
             <h4>Total</h4>
             <small>/ person</small>
           </div>
-          <p>$<samp>4.27</samp></p>
+          <p>$<samp id="total">4.27</samp></p>
         </div>
-        <button class="reset" id="reset">RESET</button>
+        <button class="reset" onclick="reset()">RESET</button>
       </div>
     </div>
 
@@ -81,5 +88,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Saravanakumr</a>.
     </div>
+    <script src="/script.js"></script>
   </body>
 </html>

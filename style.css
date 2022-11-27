@@ -2,7 +2,7 @@ body{
     background-color: hsl(185, 41%, 84%);
     display: flex;
     justify-content: center;
-    width:1440px;
+    /* width:1440px; */
     height: 700px;
     font-family: 'Space Mono', monospace;
     align-items: center;
@@ -78,10 +78,11 @@ body{
     border-radius: 6px;
     font-size: 17px;
 }
-#fiften{
+.btn_tip:hover{
     background-color: hsl(172, 67%, 45%);
-    color: rgba(0, 0, 0, 0.607);
+    cursor: pointer;
 }
+
 #costom{
     background-color: hsl(185, 41%, 84%);
     color: rgba(0, 0, 0, 0.607);
@@ -101,11 +102,10 @@ body{
     width: 350px;
     height: 40px;
     border-style:none;
-    /* border-color: hsla(172, 67%, 45%, 0.755); */
+    border-color: hsla(172, 67%, 45%, 0.755);
     border-radius: 5px;
     border-width: 0.2rem;
     background-color:  hsl(189, 41%, 97%);
-    position: relative;
     background-image: url(/images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: 12px;
@@ -118,7 +118,9 @@ body{
     border-width: 0.2rem;
     border-style:solid;
 }
-
+#num_of_ppl_input:focus{
+    background-image: none;
+}
 .right_side{
     width: 430px;
     height: 350px;
@@ -175,4 +177,30 @@ samp{
     border-style: none;
     border-radius: 4px;
     color: rgba(0, 0, 0, 0.722);
+}
+
+.reset:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(172, 67%, 45%);
+    color: hsl(172, 67%, 45%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn_tip2{
+    font-family: 'Space Mono', monospace;
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    margin-right: 15px;
+    background-color:hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    border-style: none;
+    border-radius: 6px;
+    font-size: 17px;
+    text-align: center;
+}
+.btn_tip2::placeholder{
+    padding: 20%;
 }
