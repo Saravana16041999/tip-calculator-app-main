@@ -11,7 +11,7 @@ body{
 }
 .main{
     background-color: hsl(0, 0%, 100%);
-    width: 900px;
+    width: 930px;
     height: 430px;
     margin-bottom: 100px;
     border-radius: 20px;
@@ -33,7 +33,7 @@ body{
     width: 350px;
     height: 40px;
     border-style:none;
-    /* border-color: hsla(172, 67%, 45%, 0.755); */
+    border-color: hsla(172, 67%, 45%, 0.755);
     border-radius: 5px;
     border-width: 0.2rem;
     background-color:  hsl(189, 41%, 97%);
@@ -57,12 +57,23 @@ body{
     background-image: none;
 }
 .selection{
-    margin-top: 40px;
+    margin-top: 20px;
     display: grid;
     grid-row: auto;
 }
+.select{
+    display: none;
+    margin-bottom: 20px;
+}
+.error{
+    color: red;
+}
 .select_tip{
     color: rgba(0, 0, 0, 0.581);
+}
+
+.row{
+    width: 380px;
 }
 .btn_tip{
     font-family: 'Space Mono', monospace;
@@ -153,12 +164,13 @@ h4{
     margin-bottom: 0px;
 }
 small{
-   color: rgba(255, 255, 255, 0.646);
+    color: rgba(255, 255, 255, 0.646);
 }
 p{
     margin-top: 60px;
     font-size: 35px;
     color: hsl(172, 67%, 45%);
+    margin-right: 20px;
 }
 samp{
     font-size: 50px;
