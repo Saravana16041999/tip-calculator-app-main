@@ -2,7 +2,7 @@ body{
     background-color: hsl(185, 41%, 84%);
     display: flex;
     justify-content: center;
-    /* width:1440px; */
+    width:1440px;
     height: 700px;
     font-family: 'Space Mono', monospace;
     align-items: center;
@@ -20,8 +20,6 @@ body{
 }
 
 .bill_main{
-    margin-left: 50px;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -120,6 +118,13 @@ body{
 }
 #num_of_ppl_input:focus{
     background-image: none;
+}
+.left_side{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
 }
 .right_side{
     width: 430px;
