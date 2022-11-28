@@ -5,6 +5,8 @@ const pplInputEl = document.getElementById(`num_of_ppl_input`);
 const totalEl = document.getElementById(`total`);
 const tipAmtEl = document.getElementById(`tip_amt`);
 const customEl = document.getElementById(`custom`);
+const errorEl = document.getElementById(`requried`);
+
 //make total and tip amt is zero ;
 //display total amount based on bill and number of ppl;
 //claculate based on the button 5% etc.. ;
@@ -20,6 +22,7 @@ function init(){
     billInputEl.value = null;
     pplInputEl.value = null;
 }
+
 
 function five(){ 
     total = Number(billInputEl.value) / Number(pplInputEl.value);

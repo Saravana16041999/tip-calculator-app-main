@@ -66,6 +66,7 @@ body{
     margin-bottom: 20px;
 }
 .error{
+    display: block;
     color: red;
 }
 .select_tip{
