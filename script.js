@@ -5,7 +5,8 @@ const pplInputEl = document.getElementById(`num_of_ppl_input`);
 const totalEl = document.getElementById(`total`);
 const tipAmtEl = document.getElementById(`tip_amt`);
 const customEl = document.getElementById(`custom`);
-const errorEl = document.getElementById(`requried`);
+const errorEl1 = document.getElementById(`error1`);
+const errorEl2 = document.getElementById(`error2`)
 
 //make total and tip amt is zero ;
 //display total amount based on bill and number of ppl;
@@ -24,40 +25,66 @@ function init(){
 }
 
 
-function five(){ 
-    total = Number(billInputEl.value) / Number(pplInputEl.value);
-    let fiveper = Math.trunc(5 / total * 100);
-    tipAmtEl.innerText = fiveper;
-    totalEl.innerText = Math.floor(total);
+function five(){
+    if(billInputEl.value === `` || pplInputEl.value === ``){
+        errorEl1.classList.add('select');
+        errorEl2.classList.add(`new`);
+    }else{
+        total = Number(billInputEl.value) / Number(pplInputEl.value);
+        let fiveper = Math.trunc(5 / total * 100);
+        tipAmtEl.innerText = fiveper;
+        totalEl.innerText = Math.floor(total);
+    }
+    
 }
 
 
 function ten(){
+    if(billInputEl.value === `` || pplInputEl.value === ``){
+        errorEl1.classList.add('select');
+        errorEl2.classList.add(`new`);
+    }else{
     total = Number(billInputEl.value) / Number(pplInputEl.value); 
     let fiveper = Math.trunc(10 / total * 100);
     tipAmtEl.innerText = fiveper;
     totalEl.innerText = Math.floor(total);
+    }
 }
 
 function fifteen(){
+    if(billInputEl.value === `` || pplInputEl.value === ``){
+        errorEl1.classList.add('select');
+        errorEl2.classList.add(`new`);
+    }else{
     total = Number(billInputEl.value) / Number(pplInputEl.value); 
     let fiveper = Math.trunc(15 / total * 100);
     tipAmtEl.innerText = fiveper;
     totalEl.innerText = Math.floor(total);
+    }
 }
 
 function twentyfife(){
+    if(billInputEl.value === `` || pplInputEl.value === ``){
+        errorEl1.classList.add('select');
+        errorEl2.classList.add(`new`);
+    }else{
     total = Number(billInputEl.value) / Number(pplInputEl.value); 
     let fiveper = Math.trunc(25 / total * 100);
     tipAmtEl.innerText = fiveper;
     totalEl.innerText = Math.floor(total);
+    }
 }
 
 function fifty(){
+    if(billInputEl.value === `` || pplInputEl.value === ``){
+        errorEl1.classList.add('select');
+        errorEl2.classList.add(`new`);
+    }else{
     total = Number(billInputEl.value) / Number(pplInputEl.value); 
     let fiveper = Math.trunc(50 / total * 100);
     tipAmtEl.innerText = fiveper;
     totalEl.innerText = Math.floor(total);
+    }
 }
 
 

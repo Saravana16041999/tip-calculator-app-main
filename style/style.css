@@ -61,14 +61,15 @@ body{
     display: grid;
     grid-row: auto;
 }
+
 .select{
-    display: none;
-    margin-bottom: 20px;
-}
-.error{
-    display: block;
     color: red;
 }
+.new{
+    margin-left: 70px;
+    color: red;
+}
+
 .select_tip{
     color: rgba(0, 0, 0, 0.581);
 }
